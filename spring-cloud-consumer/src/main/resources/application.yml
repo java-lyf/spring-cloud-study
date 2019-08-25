@@ -1,0 +1,10 @@
+server:
+  port: 6300
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zone1:6200/eureka
+spring:
+  application:
+    name: spring-cloud-consumer

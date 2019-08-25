@@ -1,0 +1,12 @@
+server:
+  port: 6100
+spring:
+  application:
+    name: spring-cloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zone1:6200/eureka/ #,http://zone3:6002/eureka/
+
+# http://127.0.0.1:6100/serviceName/login

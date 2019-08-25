@@ -1,0 +1,26 @@
+---
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: zone1
+server:
+  port: 6200
+eureka:
+  instance:
+    hostname: zone1
+  client:
+    service-url:
+      defaultZone: http://zone2:6201/eureka/
+---
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: zone2
+server:
+  port: 6201
+eureka:
+  instance:
+    hostname: zone2
+  client:
+    service-url:
+      defaultZone: http://zone1:6200/eureka/
