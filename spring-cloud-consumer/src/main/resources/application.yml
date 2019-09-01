@@ -8,3 +8,45 @@ eureka:
 spring:
   application:
     name: spring-cloud-consumer
+  datasource:
+    url: jdbc:mysql://localhost:3306/shop_online?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  activemq:
+    broker-url: tcp://192.168.31.207:61616
+    # 在考虑结束之前等待的时间
+    close-timeout: 15s
+    # 默认代理URL是否应该在内存中。如果指定了显式代理，则忽略此值。
+    in-memory: true
+    # 是否在回滚回滚消息之前停止消息传递。这意味着当启用此命令时，消息顺序不会被保留。
+    non-blocking-redelivery: false
+    password: 123456
+    send-timeout: 0
+    user: admin
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image: # 缩略图
+    width: 60
+    height: 60
+  tracker-list: # tracker地址
+    - 192.168.31.207:22122
+
+swagger:
+  base-package: com.lyf
+  enabled: true
+  description: Spring-Cloud学习
+  version: V2.0
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: https://github.com/dyc87112/spring-boot-starter-swagger
+  contact:
+    name: luyufan
+    url: http://www/lyfweb.cn
+    email: 761559274@qq.com
+

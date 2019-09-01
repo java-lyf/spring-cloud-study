@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyf.mapper.ItemMapper">
+
+    <select id="queryPage" resultType="com.lyf.model.Item">
+        select * from tb_item
+    </select>
+
+
+</mapper>

@@ -3,5 +3,5 @@ spring:
     config:
       name: application
       profile: dev
-      uri: http://127.0.0.1:6400
+      uri: http://127.0.0.1:6600
       label: master

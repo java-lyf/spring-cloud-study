@@ -1,0 +1,16 @@
+server:
+  port: 6500
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zone1:6200/eureka
+spring:
+  application:
+    name: zipkin-server
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
